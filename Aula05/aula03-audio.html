@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Questrial&display=swap" rel="stylesheet">
+    <title>Audio Gemidão do Zap</title>
+    <style>
+        body {
+            background-color: #d0e28c;
+            font-family: 'Chewy', cursive;
+            text-align: center;
+            font-weight: 400;
+            font-style: normal;
+            padding: 50px;
+        }
+        h1 {
+            color: #22311c;
+        }
+        audio {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Audio Gemidão do Zap</h1>
+    <audio id="meuAudio" controls loop>
+        <source src="https://soundinstants.com/pt/sound/1000-bits-g-midao-do-zap.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        const audio = document.getElementById('meuAudio');
+
+        audio.addEventListener('play', () => {
+            console.log('O áudio começou a tocar.');
+        });
+
+        audio.addEventListener('pause', () => {
+            console.log('O áudio foi pausado.');
+        });
+
+        audio.addEventListener('ended', () => {
+            console.log('O áudio terminou de tocar.');
+        });
+
+        audio.volume = 1;
+    </script>
+</body>
+</html>
