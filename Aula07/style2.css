@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, #a86afa, #a892da);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#principal {
+    width: 80%;
+    margin: 30px auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(218, 183, 250);
+}
+
+#topo_geral {
+    background-color: rgb(189, 143, 248);
+    color: black;
+    padding: 25px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(123, 85, 228);
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    color: rgb(230, 222, 250);
+    padding: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: aliceblue;
+    color: darkmagenta;
+}
