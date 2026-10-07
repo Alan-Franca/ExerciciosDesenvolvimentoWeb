@@ -3,20 +3,23 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style01.css">
     <title>Portal Front-End</title>
   </head>
 
   <body>
-    <header>
+    <div class="layout-pagina">
+    <header class="cabecalho">
       <h1>Portal Front-End</h1>
 
       <p>Conteúdos estudados durante o curso</p>
     </header>
 
-    <aside>
+    <aside class="barra-lateral">
       <h2>Conteúdos</h2>
 
       <nav>
@@ -29,11 +32,11 @@
       </nav>
     </aside>
 
-    <main>
+    <main class="grid-principal">
       <h2>Conteúdos da disciplina</h2>
 
-      <section>
-        <article>
+      <section class="grid-cards">
+        <article class="card">
           <h3>HTML</h3>
 
           <p>
@@ -41,10 +44,10 @@
             páginas Web.
           </p>
 
-          <a href="#">Saiba mais</a>
+          <a href="#" style="text-decoration: none;">Saiba mais</a>
         </article>
 
-        <article>
+        <article class="card">
           <h3>CSS</h3>
 
           <p>
@@ -52,10 +55,10 @@
             visual da página.
           </p>
 
-          <a href="#">Saiba mais</a>
+          <a href="#" style="text-decoration: none;">Saiba mais</a>
         </article>
 
-        <article>
+        <article class="card">
           <h3>Formulários</h3>
 
           <p>
@@ -63,23 +66,24 @@
             usuários.
           </p>
 
-          <a href="#">Saiba mais</a>
+          <a href="#" style="text-decoration: none;">Saiba mais</a>
         </article>
 
-        <article>
+        <article class="card">
           <h3>Tabelas</h3>
 
           <p>
             As tabelas organizam informações relacionadas em linhas e colunas.
           </p>
 
-          <a href="#">Saiba mais</a>
+          <a href="#" style="text-decoration: none;">Saiba mais</a>
         </article>
       </section>
     </main>
 
-    <footer>
+    <footer class="rodape">
       <p>Desenvolvimento Front-End para Web — 2026</p>
     </footer>
+  </div>
   </body>
 </html>

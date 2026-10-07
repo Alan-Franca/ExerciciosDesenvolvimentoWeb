@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    background-color: #faf8f8;
+    color: #1e1e1e;
+    font-family: "Roboto", sans-serif;
+}
+
+.layout-pagina {
+    display: grid;
+    grid-template-areas: 
+      "header header"
+      "sidebar main"
+      "footer footer" 
+    ;
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.cabecalho {
+    grid-area: header;
+
+    background-color: #1a1919;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin: 0 0 10px;
+}
+
+.barra-lateral {
+    grid-area: sidebar;
+    background-color: #313131;
+    padding: 20px;
+}
+
+.barra-lateral h2 {
+    color: #ffffff;
+}
+
+.barra-lateral ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-lateral li {
+    margin-bottom: 10px;
+}
+
+.barra-lateral a {
+    display: block;
+    background-color: #1a1919;
+    border: 2px solid #1a1919;
+    color: #f0efef;
+    padding: 13px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.barra-lateral a:hover {
+    background-color: #ffffff;
+    color: #313131;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.grid-principal {
+    grid-area: main;
+    padding: 30px;
+}
+
+.grid-principal h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 2px solid #222222;
+    border-radius: 7px;
+    padding: 10px;
+    text-decoration: none;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    background-color: #222222;
+    color: #f0efef;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+
+.rodape {
+    grid-area: footer;
+    background-color: #222222;
+    color: #f0efef;
+    padding: 20px;
+    text-align: center;
+}
+
+.rodape p {
+    color: #cfcfcf;
+}
+
+.rodape p:hover {
+    color: #ffffff;
+    transition: 0.3s;
+    text-shadow: 0 5px 5px rgba(250, 250, 250, 0.733);
+}
