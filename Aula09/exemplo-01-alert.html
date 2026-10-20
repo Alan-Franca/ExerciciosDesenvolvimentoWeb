@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript de head e no body</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .destaque {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function exibirAlerta() {
+            alert("Geme meu nome falando dudu!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Exemplo de uso do alert()</h1>
+    <p>Este conteúdo é exibido na tela do navegador. Ao clicar no botão abaixo, será exibida uma caixa de alerta com uma mensagem.</p>
+
+    <button onclick="exibirAlerta()">Clique aqui para exibir o alerta</button>
+
+    <script>
+        document.write('<p class="destaque">Este conteúdo foi adicionado dinamicamente usando document.write().</p>');
+    </script>
+</body>
+</html>
