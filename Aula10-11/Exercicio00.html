@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de 0 até 9</title>
+</head>
+<body>
+    <h1>Contador de 0 até 9</h1>
+    <p>O programa exibe os números de 0 até 9</p>
+
+    <div id="resultado "></div>
+
+    <script>
+        const resultado = document.getElementById("resultado");
+        for (let contador = 0; contador < 10; contador++) {
+            resultado.innerHTML += `<p> Número: ${contador} </p>`;
+        }
+    </script>
+</body>
+</html>
